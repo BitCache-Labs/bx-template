@@ -1,0 +1,77 @@
+{
+    "value0": {
+        "value0": [
+            {
+                "key": "Toolbar Show GameObjects",
+                "value": true
+            },
+            {
+                "key": "Toolbar Show Scene",
+                "value": true
+            },
+            {
+                "key": "Toolbar Show Inspector",
+                "value": true
+            },
+            {
+                "key": "Toolbar Show Assets",
+                "value": true
+            },
+            {
+                "key": "Toolbar Show Profiler",
+                "value": false
+            },
+            {
+                "key": "Toolbar Show Console",
+                "value": true
+            },
+            {
+                "key": "Toolbar Show Data",
+                "value": false
+            },
+            {
+                "key": "Toolbar Theme",
+                "value": false
+            }
+        ],
+        "value1": [],
+        "value2": [],
+        "value3": [
+            {
+                "key": "Toolbar UI Scale",
+                "value": 1.0
+            },
+            {
+                "key": "Scene View Cam Rot Z",
+                "value": 0.0
+            },
+            {
+                "key": "Scene View Cam Pos X",
+                "value": 0.0
+            },
+            {
+                "key": "Scene View Cam Rot Y",
+                "value": 0.0
+            },
+            {
+                "key": "Scene View Cam Pos Y",
+                "value": 0.0
+            },
+            {
+                "key": "Scene View Cam Rot X",
+                "value": 0.0
+            },
+            {
+                "key": "Scene View Cam Pos Z",
+                "value": 0.0
+            }
+        ],
+        "value4": [],
+        "value5": [
+            {
+                "key": "Current Scene",
+                "value": "[assets]/main.scene"
+            }
+        ]
+    }
+}
