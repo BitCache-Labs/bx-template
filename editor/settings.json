@@ -47,23 +47,35 @@
             },
             {
                 "key": "Scene View Cam Pos X",
-                "value": 0.0
+                "value": 47.703895568847659
             },
             {
                 "key": "Scene View Cam Rot Y",
-                "value": 0.0
+                "value": -4039.5
             },
             {
                 "key": "Scene View Cam Pos Y",
-                "value": 0.0
+                "value": 19.443849563598634
             },
             {
                 "key": "Scene View Cam Rot X",
-                "value": 0.0
+                "value": 7.5
             },
             {
                 "key": "Scene View Cam Pos Z",
-                "value": 0.0
+                "value": -7.515251636505127
+            },
+            {
+                "key": "Scene View Cam Look Speed",
+                "value": 0.5
+            },
+            {
+                "key": "Scene View Cam Move Speed",
+                "value": 50.0
+            },
+            {
+                "key": "Scene View Cam Input Dead Zone",
+                "value": 0.10000000149011612
             }
         ],
         "value4": [],

@@ -1,5 +1,1613 @@
 {
     "scene": {
-        "gameObjects": []
+        "gameObjects": [
+            {
+                "name": "Floor",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385899388541658752
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 2147483649,
+                        "polymorphic_name": "Transform",
+                        "ptr_wrapper": {
+                            "id": 2147483649,
+                            "data": {
+                                "position": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "scale": {
+                                    "x": 0.5,
+                                    "y": 0.0010000000474974514,
+                                    "z": 0.5
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2147483650,
+                        "polymorphic_name": "MeshFilter",
+                        "ptr_wrapper": {
+                            "id": 2147483650,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2147483651,
+                        "polymorphic_name": "MeshRenderer",
+                        "ptr_wrapper": {
+                            "id": 2147483651,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2147483652,
+                        "polymorphic_name": "Collider",
+                        "ptr_wrapper": {
+                            "id": 2147483652,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 50.0,
+                                    "y": 0.10000000149011612,
+                                    "z": 50.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Player",
+                "className": "PlayerCharacter",
+                "entity": {
+                    "id": 7385901533878931194
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483653,
+                            "data": {
+                                "position": {
+                                    "x": 6.0,
+                                    "y": 1.0,
+                                    "z": 6.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "scale": {
+                                    "x": 0.009999999776482582,
+                                    "y": 0.009999999776482582,
+                                    "z": 0.009999999776482582
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483654,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/monkey_Suzanne_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483655,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2147483653,
+                        "polymorphic_name": "Animator",
+                        "ptr_wrapper": {
+                            "id": 2147483656,
+                            "data": {
+                                "skeleton": {
+                                    "storage": 0
+                                },
+                                "animations": []
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2147483654,
+                        "polymorphic_name": "CharacterController",
+                        "ptr_wrapper": {
+                            "id": 2147483657,
+                            "data": {
+                                "offset": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "width": 1.0,
+                                "height": 0.5,
+                                "stepHeight": 0.3499999940395355
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2147483655,
+                        "polymorphic_name": "Attributes",
+                        "ptr_wrapper": {
+                            "id": 2147483658,
+                            "data": {}
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385909856250157024
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483659,
+                            "data": {
+                                "position": {
+                                    "x": 16.0,
+                                    "y": 10.0,
+                                    "z": 16.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "scale": {
+                                    "x": 0.009999999776482582,
+                                    "y": 0.10000000149011612,
+                                    "z": 0.009999999776482582
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483660,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483661,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483662,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 1.0,
+                                    "y": 10.0,
+                                    "z": 1.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385911005851800756
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483663,
+                            "data": {
+                                "position": {
+                                    "x": 20.000017166137697,
+                                    "y": 14.999994277954102,
+                                    "z": 7.0
+                                },
+                                "rotation": {
+                                    "x": 0.35355323553085329,
+                                    "y": -0.6123718023300171,
+                                    "z": -0.3535539507865906,
+                                    "w": 0.612372875213623
+                                },
+                                "scale": {
+                                    "x": 0.004999999422580004,
+                                    "y": 0.09999997913837433,
+                                    "z": 0.050000011920928958
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483664,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483665,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483666,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 0.5,
+                                    "y": 10.0,
+                                    "z": 5.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385912485943348514
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483667,
+                            "data": {
+                                "position": {
+                                    "x": 5.0,
+                                    "y": 20.0,
+                                    "z": 20.0
+                                },
+                                "rotation": {
+                                    "x": 1.0536702177432744e-8,
+                                    "y": -1.0536719941001138e-8,
+                                    "z": 0.7071065306663513,
+                                    "w": 0.7071070075035095
+                                },
+                                "scale": {
+                                    "x": 0.004999932367354631,
+                                    "y": 0.19999779760837556,
+                                    "z": 0.050000015646219257
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483668,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483669,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483670,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 0.5,
+                                    "y": 20.0,
+                                    "z": 5.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385912631351718304
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483671,
+                            "data": {
+                                "position": {
+                                    "x": -20.0,
+                                    "y": 19.999998092651368,
+                                    "z": 5.0
+                                },
+                                "rotation": {
+                                    "x": -0.5,
+                                    "y": -0.5000001192092896,
+                                    "z": 0.49999967217445376,
+                                    "w": 0.5000002384185791
+                                },
+                                "scale": {
+                                    "x": 0.004999885801225901,
+                                    "y": 0.19999821484088899,
+                                    "z": 0.050000011920928958
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483672,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483673,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483674,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 0.5,
+                                    "y": 20.0,
+                                    "z": 5.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385912689057040706
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483675,
+                            "data": {
+                                "position": {
+                                    "x": -5.0,
+                                    "y": 20.0,
+                                    "z": -20.0
+                                },
+                                "rotation": {
+                                    "x": 1.0536702177432744e-8,
+                                    "y": -1.0536719941001138e-8,
+                                    "z": 0.7071065306663513,
+                                    "w": 0.7071070075035095
+                                },
+                                "scale": {
+                                    "x": 0.004999893717467785,
+                                    "y": 0.19999656081199647,
+                                    "z": 0.050000015646219257
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483676,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483677,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483678,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 0.5,
+                                    "y": 20.0,
+                                    "z": 5.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385913560626655518
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483679,
+                            "data": {
+                                "position": {
+                                    "x": 24.0,
+                                    "y": 10.0,
+                                    "z": 24.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "scale": {
+                                    "x": 0.009999999776482582,
+                                    "y": 0.10000000149011612,
+                                    "z": 0.009999999776482582
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483680,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483681,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483682,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 1.0,
+                                    "y": 10.0,
+                                    "z": 1.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385913653911868680
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483683,
+                            "data": {
+                                "position": {
+                                    "x": -24.0,
+                                    "y": 10.0,
+                                    "z": 24.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "scale": {
+                                    "x": 0.009999999776482582,
+                                    "y": 0.10000000149011612,
+                                    "z": 0.009999999776482582
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483684,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483685,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483686,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 1.0,
+                                    "y": 10.0,
+                                    "z": 1.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385913691726328525
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483687,
+                            "data": {
+                                "position": {
+                                    "x": -24.0,
+                                    "y": 10.0,
+                                    "z": -24.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "scale": {
+                                    "x": 0.009999999776482582,
+                                    "y": 0.10000000149011612,
+                                    "z": 0.009999999776482582
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483688,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483689,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483690,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 1.0,
+                                    "y": 10.0,
+                                    "z": 1.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385913712722837769
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483691,
+                            "data": {
+                                "position": {
+                                    "x": 14.0,
+                                    "y": 10.0,
+                                    "z": -24.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "scale": {
+                                    "x": 0.009999999776482582,
+                                    "y": 0.10000000149011612,
+                                    "z": 0.009999999776482582
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483692,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483693,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483694,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 1.0,
+                                    "y": 10.0,
+                                    "z": 1.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385913752041108071
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483695,
+                            "data": {
+                                "position": {
+                                    "x": 14.0,
+                                    "y": 10.0,
+                                    "z": -16.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "scale": {
+                                    "x": 0.009999999776482582,
+                                    "y": 0.10000000149011612,
+                                    "z": 0.009999999776482582
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483696,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483697,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483698,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 1.0,
+                                    "y": 10.0,
+                                    "z": 1.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385913847369270346
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483699,
+                            "data": {
+                                "position": {
+                                    "x": -16.0,
+                                    "y": 10.0,
+                                    "z": -16.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "scale": {
+                                    "x": 0.009999999776482582,
+                                    "y": 0.10000000149011612,
+                                    "z": 0.009999999776482582
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483700,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483701,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483702,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 1.0,
+                                    "y": 10.0,
+                                    "z": 1.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385913870809237499
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483703,
+                            "data": {
+                                "position": {
+                                    "x": -16.0,
+                                    "y": 10.0,
+                                    "z": 16.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0,
+                                    "w": 1.0
+                                },
+                                "scale": {
+                                    "x": 0.009999999776482582,
+                                    "y": 0.10000000149011612,
+                                    "z": 0.009999999776482582
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483704,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483705,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483706,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 1.0,
+                                    "y": 10.0,
+                                    "z": 1.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385914315160766778
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483707,
+                            "data": {
+                                "position": {
+                                    "x": 14.99999713897705,
+                                    "y": 10.000001907348633,
+                                    "z": -6.0
+                                },
+                                "rotation": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": -0.7071064114570618,
+                                    "w": 0.7071071267127991
+                                },
+                                "scale": {
+                                    "x": 0.004999990575015545,
+                                    "y": 0.09999983757734299,
+                                    "z": 0.050000011920928958
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483708,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483709,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483710,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 0.5,
+                                    "y": 10.0,
+                                    "z": 5.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "name": "Cube",
+                "className": "StaticModel",
+                "entity": {
+                    "id": 7385914424364926660
+                },
+                "components": [
+                    {
+                        "polymorphic_id": 1,
+                        "ptr_wrapper": {
+                            "id": 2147483711,
+                            "data": {
+                                "position": {
+                                    "x": -3.0000038146972658,
+                                    "y": 4.999980926513672,
+                                    "z": -6.0
+                                },
+                                "rotation": {
+                                    "x": -3.7292964272239718e-9,
+                                    "y": 6.461880808217302e-9,
+                                    "z": -0.4998495876789093,
+                                    "w": 0.866112232208252
+                                },
+                                "scale": {
+                                    "x": 0.004999962635338306,
+                                    "y": 0.09999953955411911,
+                                    "z": 0.05000000074505806
+                                }
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 2,
+                        "ptr_wrapper": {
+                            "id": 2147483712,
+                            "data": {
+                                "meshes": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_Cube_0.mesh"
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 3,
+                        "ptr_wrapper": {
+                            "id": 2147483713,
+                            "data": {
+                                "materials": [
+                                    {
+                                        "storage": 1,
+                                        "filename": "[assets]/models/cube_DefaultMaterial_0.material"
+                                    }
+                                ],
+                                "shadowCastingMode": 1,
+                                "receiveShadows": true,
+                                "contributeGI": true,
+                                "receiveGI": true
+                            }
+                        }
+                    },
+                    {
+                        "polymorphic_id": 4,
+                        "ptr_wrapper": {
+                            "id": 2147483714,
+                            "data": {
+                                "shape": {
+                                    "value0": 1
+                                },
+                                "center": {
+                                    "x": 0.0,
+                                    "y": 0.0,
+                                    "z": 0.0
+                                },
+                                "size": {
+                                    "x": 0.5,
+                                    "y": 10.0,
+                                    "z": 5.0
+                                },
+                                "radius": 1.0,
+                                "height": 1.0,
+                                "axis": {
+                                    "value0": 1
+                                },
+                                "scale": {
+                                    "x": 1.0,
+                                    "y": 1.0,
+                                    "z": 1.0
+                                },
+                                "isConcave": false,
+                                "mesh": {
+                                    "storage": 0
+                                }
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
     }
 }

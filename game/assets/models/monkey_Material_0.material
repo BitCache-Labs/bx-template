@@ -1,0 +1,17 @@
+{
+    "material": {
+        "shader": {
+            "storage": 1,
+            "filename": "[assets]/shaders/SimpleUnlit.shader"
+        },
+        "textures": [
+            {
+                "key": "Albedo",
+                "value": {
+                    "storage": 1,
+                    "filename": "[assets]/textures/grid.texture"
+                }
+            }
+        ]
+    }
+}
